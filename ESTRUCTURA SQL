@@ -1,0 +1,28 @@
+--crear base de datos
+
+CREATE DATABASE integrador_cac;
+
+--Crear tablas
+
+CREATE TABLE oradores (
+    id_orador INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    nombre VARCHAR(255) NOT NULL,
+    apellido VARCHAR(255) NOT NULL,
+    mail VARCHAR(255) NOT NULL UNIQUE,
+    tema VARCHAR(255) NOT NULL,
+    fecha_alta DATE NOT NULL
+);
+
+
+--Insertar Registros
+INSERT INTO oradores (nombre, apellido, mail, tema, fecha_alta) VALUES
+('Juan', 'Pérez', 'juan.perez@example.com', 'Inteligencia Artificial', '2023-01-01'),
+('María', 'Gómez', 'maria.gomez@example.com', 'Machine Learning', '2023-01-02'),
+('Carlos', 'López', 'carlos.lopez@example.com', 'Desarrollo Web', '2023-01-03'),
+('Laura', 'Martínez', 'laura.martinez@example.com', 'Ciencia de Datos', '2023-01-04'),
+('Pedro', 'Rodríguez', 'pedro.rodriguez@example.com', 'Ciberseguridad', '2023-01-05'),
+('Ana', 'Sánchez', 'ana.sanchez@example.com', 'Programación en Python', '2023-01-06'),
+('Luis', 'Hernández', 'luis.hernandez@example.com', 'Redes Neuronales', '2023-01-07'),
+('Elena', 'Díaz', 'elena.diaz@example.com', 'Desarrollo de Software', '2023-01-08'),
+('Sergio', 'García', 'sergio.garcia@example.com', 'Internet de las Cosas', '2023-01-09'),
+('Carmen', 'Fernández', 'carmen.fernandez@example.com', 'Big Data', '2023-01-10');
